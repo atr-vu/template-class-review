@@ -1,0 +1,179 @@
+%%
+%% This is file `sample-sigconf.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigconf')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[sigconf,10pt, screen]{acmart}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{none}
+\copyrightyear{2023}
+\acmYear{2023}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[SysSem'23]{Systems Seminar (SysSem)}{Feb-Mar 2023}{Amsterdam, the Netherlands}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Review: Paper Title (max 2 pages)}
+
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+% \author{Animesh Trivedi}
+% \affiliation{%
+%   \institution{Vrije Universiteit Amsterdam}
+%   \country{}
+% }
+% \renewcommand{\shortauthors}{Trivedi}
+
+% Do not put your name as we will be distributing all these reviews to all 
+\author{Student number: 0000000}
+\affiliation{%
+  \institution{}
+  \country{}
+}
+%\renewcommand{\shortauthors}{Anonymous}
+
+\begin{abstract}
+Put a small scientific summary of your review here. Provide a brief summary of the paper in your words. The aim of the summary is to demonstrate that you have read the paper, and understood the context and the problem, and how it solved it. Try to write in your own words what the paper is about (without copying the content from the abstract or the introduction of the paper), present top-level ideas without going into much detail, and aim to present factual information (not your opinion, yet). In a couple of lines summarize strengths, weaknesses, and key contributions of the paper. We will elaborate on these later. 
+\end{abstract}
+
+\settopmatter{printfolios=true}
+\maketitle
+
+\section{Scientific Problem}
+In a couple of lines, what is the primary problem the paper is trying to solve, why it is important, has the paper justified why such problem is important. All top conference papers have such details, see their call for paper, SOSP (flagship systems conference) \url{https://www.sigops.org/2023/sosp-2023-call-for-papers/} and SIGCOMM (flagship networking conference) \url{http://conferences.sigcomm.org/sigcomm/2023/cfp.html}. 
+
+\section{Their Solution}
+In a couple of lines explain their solution, trick, mechanism, primary contributions (as the authors claim or you understand). 
+
+\section{Strong Points}
+A list of strengths of the paper with a brief explanation, keep it short and simple. Something between 2-5 points would do.  Common pros could be the problem is well motivated, the design of the solution is elegant, very comprehensive evaluation, well written paper, or comprehensive related work, etc. 
+\begin{enumerate}
+    \item 1 line 
+    \item 1 line 
+    \item 1 line 
+\end{enumerate}
+
+\section{Weak points}
+A list of weaknesses of the paper, keep it short and simple. Something between 2-5 points would do. Common weaknesses include not proper justification of the problem (e.g., problem is not important enough or difficult enough), over engineered system, not all details are given, poor evaluation, missing/inappropriate comparison with state-of-the-art or state-of-the-practice systems, etc. 
+\begin{enumerate}
+    \item 1 line 
+    \item 1 line 
+    \item 1 line 
+\end{enumerate}
+
+\section{Critical Analysis}
+Critical analysis is about thinking critically that if you understand and but the work form the paper. It might be difficult for you to judge the novelty of the work, hence, you can focus on details, ideas, and concepts that you know and how do they fit with this paper. Here is a laundry list of ideas that can help you start analysis of the paper (do not copy paste content and language from the paper. We will immediately deduct points): 
+\begin{itemize}
+    \item You do not have to comment on every aspect and section in the paper. 
+    \item hat problem is it trying to address? Was the problem justified enough (well motivated), do you believe that it is a real and important problem worth solving? 
+    \item How well the paper addresses the problem, does it solve it completely or partially? Try to separate design/architecture from the actual implementation level details. A design and architecture level details would be what you would use to re-implement the system in another setting. Implementation-specific details are specific to that particular implementation as described in the paper by the authors. 
+    \item How technically sound the work is? What scientific claims the paper makes and do all claims are backed up by experimental evaluation? 
+    \item Do you believe their evaluation and data presented? Did they miss out some issues with the experimentation? How good, exhaustive is their analysis? Can you reproduce their results? 
+    \item How does the paper relate to other work in the area? Read their related work and other papers that they reference. Does the paper justify clearly where it stands with the related work? Did they miss out on some work that you know about? It is expected that you read around and look for more evidence beyond just reading the paper. Search on google scholar and see which papers refer to the paper and how do they compare against it. \textbf{Googling and gathering background information is part of your work}.
+    \item How broad and general is the problem and solution? Can their results be applied to other systems or fields or other problem you might think of? For example, it could be that the scheduling algorithm from a networking paper can be applied to storage systems. What did we learn from the paper? 
+    \item What are your suggestions to improve the paper, what additional experiment you would have liked to see, what detail, what analysis? 
+    \item Almost all papers are open access, with their conference talks available online. Have a look at them and see how the authors themselves presented the work, and what questions were asked to them in the conference. 
+\end{itemize}
+
+We are not asking you to answer these questions specifically, but think which of these and others questions can be asked about the paper. In a conference review we also point out English mistakes, style differences, visual criticism (graphs are too small, font too big, color combination). However, this is not the point of this classroom review session. Please omit such details. These are considered minor issues which can be fixed by the authors in the camera ready verion of the paper, and typically does not warrant rejecting a paper.  
+
+\textbf{Always remember:} the process of reviewing a paper should be considered as \textit{“how can I help this paper to become better”}, not “how to reject a paper”. A lot of work goes on in writing a top-quality paper. A rejection from a conference means that the paper in its current form is not ready for a wide-spread distribution. Hence, it is more important to write positive, constructive reviews so that authors can use that to improve their paper for the next round of submission. 
+
+\textbf{How your review is graded:} We understand that you are not an expert in the area, or perhaps even familiar with the area. That is completely ok. What we are looking for if you can understand scientific literature, read it critically, and talk/write/present it. The best way to do so is to \textit{justify} everything that you are writing. Your justification can be your own experience, past classes that you took, projects you work on, and other papers you know. It is perfectly fine to write that "You do not think storage is a problem for such systems. Reporting numbers from Storage Systems, if the authors were using flash storage instead of HDD, there will not have been a performance issue". Justification of your position (criticism, adulation) is the primary factor what we are judging. The best way to improve your justification capabilities is to read more, think of arguments used in different papers, other reviews in the class, other lectures, online reviews of the work, etc. The justification building does not start of stop with one class. 
+
+Further useful information and strongly recommended background reading that you should checkout:
+\begin{itemize}    
+    \item Systems take a lot of time to code, debug, and develop, but that is not the most critical information that a paper writer put in a conference paper submission. About how to write good papers~\cite{2023-usenix-good-papers}.    
+    \item Scientific literature is dense, complex, and multi-facet. However, this is never a justification to write badly. This goes for these reviews, your thesis, any conference papers, or any piece of scientific document that you will write. Specifically in systems, often we think someone who does not understand how DMA helps with the quantum tunneling effect inside my neuromorphic chip is the biggest idiot. We, as computer scientists, are in \textit{complexity management business}. And writing complex details takes time, while we flatten a multi-dimensional knowledge graph from our heads in to a single-dimensional linear linked list on the paper. Hence, it is very important to understand the science of reading. Put yourself in the shoes of a reader (who might be tired, or hungry, or just annoyed at life - it happens, we are humans!) and help them, guide them to enjoy your writing. \textbf{The onus of proof is on the writer, not the reader}, see this excellent guide on science of scientific writing~\cite{2023-scientific-writing}.
+    \item Gernot Heiser is a famous computer scientist who works on building secure systems. He lead the team who for the first time formally verified an operating system kernel (called seL4). Clearly he has some selected words to say about student reports~\cite{2023-gheiser-student-reports} and his world-famous benchmarking crimes~\cite{2023-gheiser-bcrimes}. Almost every paper commits these crimes (including our works too. Hey, no one is perfect!). See if you can spot them, and avoid them in your work.
+    \item Writing reviews for top conferences take time, and it is an iterative process. Timothy (Mothy) Roscoe is a renowned computer systems professor at ETH who is building (or has built) a range of fun computer systems (P4, PlanetLab, Enzian, Barrelfish). He knows a thing or two about how to review papers~\cite{2023-eth-mothy-review}.
+    \item Lastly, (again, you may start to see a pattern here) experimental evaluation of computer systems is a notoriously hard problem even for seasoned researchers like John Ousterhout (famous for...well he has a Wikipedia entry \url{https://en.wikipedia.org/wiki/John_Ousterhout}, why not read it for yourself). He has an excellent article on how to think about designing experiments (and conversely how to evaluate) exepriments~\cite{2018-cacm-level-deep-measure}, and research advice~\cite{2023-ousterhout-sayings}.
+    \end{itemize}
+\newpage
+\section{Meta information}
+This page and references are not the part of the 2 pages limits. 
+\subsubsection{How much did you learn from this paper}
+\begin{enumerate}
+    \item Nothing, I have read this paper or knew about this paper before 
+    \item A bit, but nothing useful for me
+    \item A good amount, now I know a new area of work
+    \item A lot, I enjoyed reading the paper and would like to work on similar topics
+\end{enumerate}
+
+
+Did you learn something new: (select an option here) 1-4?
+
+\subsection{Paper rating}
+Marks for this paper (out of 10): / 10 (make sure that you justify this in the review) 
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{main}
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.
